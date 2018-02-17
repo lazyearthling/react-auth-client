@@ -1,7 +1,7 @@
 {
   "name": "react-auth-client",
   "version": "1.0.0",
-  "description": "A client app used for server authentication.",
+  "description": "A simple React boilerplate.",
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
