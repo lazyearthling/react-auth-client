@@ -1,14 +1,12 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
 
-class Main extends Component{
-  render(){
-    return(
-      <div>
-        React Starter
-      </div>
-    );
-  }
-}
+import App from './components/app';
 
-ReactDOM.render(<Main />,document.querySelector('.container'));
+ReactDOM.render(
+    <Provider store={createStore(()=>{})}>
+      <App />
+    </Provider>
+    ,document.querySelector('.container'));
