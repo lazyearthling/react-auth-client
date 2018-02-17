@@ -7,14 +7,17 @@ import {Route,Switch,BrowserRouter} from 'react-router-dom';
 import reducers from './reducers';
 
 import App from './components/app';
+import Header from './components/header';
 
 //Add middleware
 const createStoreWithMiddleware = applyMiddleware()(createStore);
+
 
 ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <div>
+          <Header />
           <Switch>
             <Route path="/" component={App} />
           </Switch>
