@@ -1,8 +1,12 @@
 {
-  "name": "react-auth-client",
+  "name": "react-starter",
   "version": "1.0.0",
   "description": "A simple React boilerplate.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazyearthling/ReactStarter.git"
+  },
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
