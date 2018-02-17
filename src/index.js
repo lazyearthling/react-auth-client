@@ -8,6 +8,7 @@ import reducers from './reducers';
 
 import App from './components/app';
 import Header from './components/header';
+import Signin from './components/auth/signin';
 
 //Add middleware
 const createStoreWithMiddleware = applyMiddleware()(createStore);
@@ -19,6 +20,7 @@ ReactDOM.render(
         <div>
           <Header />
           <Switch>
+            <Route path="/signin" component={Signin} />
             <Route path="/" component={App} />
           </Switch>
         </div>
