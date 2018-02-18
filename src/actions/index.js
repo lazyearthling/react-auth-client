@@ -1,4 +1,5 @@
 import axios from 'axios';
+import history from '../utils/history';
 import {AUTH_USER,AUTH_ERROR,DEAUTH_USER} from './types';
 
 const ROOT_URL = `http://localhost:3000`;
