@@ -4,7 +4,9 @@ class App extends Component{
   render(){
     return(
       <div>
-        React Starter
+        <h2 style={{textAlign:"center"}}>
+          React Authentication client
+        </h2>
       </div>
     );
   }
