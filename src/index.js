@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
 import {Route,Switch,BrowserRouter} from 'react-router-dom';
+import reduxThunk from 'redux-thunk';
 
 import reducers from './reducers';
 
@@ -11,7 +12,7 @@ import Header from './components/header';
 import Signin from './components/auth/signin';
 
 //Add middleware
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 
 
 ReactDOM.render(
