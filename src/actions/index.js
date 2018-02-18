@@ -16,6 +16,13 @@ export function signInUser({email,password}){
   }
 }
 
+export function signOutUser(){
+  localStorage.removeItem('token');
+  return{
+    type: DEAUTH_USER
+  }
+}
+
 export function authError(error){
   return {
     type: AUTH_ERROR,
