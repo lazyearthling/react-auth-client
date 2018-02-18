@@ -10,6 +10,8 @@ export function signInUser({email,password}){
       .then(response => {
         dispatch({type:AUTH_USER})
         localStorage.setItem('token',response.data.token);
+        history.push('/feature');
+        history.go();
       })
       .catch((err) => {
         dispatch(authError("Incorrect Login Details"))
